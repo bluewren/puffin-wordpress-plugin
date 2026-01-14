@@ -6,7 +6,7 @@
  * Version:           0.5
  * Author:            BlueWren
  * Author URI:        https://www.bluewren.co.uk
- * Update URI:        https://github.com/DebugMyCode/bw-puffin-email/
+ * Update URI:        https://github.com/bluewren/puffin-wordpress-plugin
  * Description: 	  Send mail to Puffin.
  * License: 		  GPLv2 or later
  * Text Domain: 	  bw-puffin
@@ -54,9 +54,9 @@ function self_update( $update, array $plugin_data, string $plugin_file, $locales
 
 	// let's go get the latest version number from GitHub
 	$response = wp_remote_get(
-		'https://api.github.com/repos/DebugMyCode/bw-puffin-email/releases/latest',
+		'https://api.github.com/repos/bluewren/puffin-wordpress-plugin/releases/latest',
 		array(
-			'user-agent' => 'DebugMyCode',
+			'user-agent' => 'bluewren',
 		)
 	);
 
