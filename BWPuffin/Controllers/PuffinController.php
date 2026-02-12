@@ -60,6 +60,18 @@ class PuffinController
                 if($cc = $this->getCcs($header))
                     break;
             }
+
+            foreach($headers as $header){
+                if($from = $this->getFrom($header)){
+                    break;
+                }
+            }
+
+            foreach($headers as $header){
+                if($fromName = $this->getFrom($header, 'name')){
+                    break;
+                }
+            }
         }
 
         // $message = apply_filters('the_content', $atts['message']);
