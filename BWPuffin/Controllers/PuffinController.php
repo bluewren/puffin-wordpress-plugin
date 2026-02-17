@@ -16,7 +16,7 @@ class PuffinController
     {
         $this->puffin = $puffin;
 
-        add_filter( 'wp_mail_content_type','email_set_content_type' );
+        add_filter( 'wp_mail_content_type', [$this, 'email_set_content_type']);
 
         add_filter( 'wp_mail', [$this, 'sendPuffinMail'], 10, 2);
         add_filter( 'pre_wp_mail', [$this, 'sendPuffinMailPre'], 10, 2);

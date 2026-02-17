@@ -3,7 +3,7 @@
  * @wordpress-plugin
  * Plugin Name:       BlueWren Puffin
  * Plugin URI:        https://www.bluewren.co.uk
- * Version:           0.6
+ * Version:           0.7
  * Author:            BlueWren
  * Author URI:        https://www.bluewren.co.uk
  * Update URI:        https://github.com/bluewren/puffin-wordpress-plugin
