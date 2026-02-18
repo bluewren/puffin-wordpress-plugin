@@ -36,9 +36,9 @@ class Admin
 
     public function renderAdminPage()
     {
-        $token_url = get_option('options_puffin_token_url');
+        $token_url = get_option('options_puffin_token_url') ?? 'https://puffin.bluewren.systems/oauth/token';
         $client_id = get_option('options_puffin_client_id');
-        $app_url = get_option('options_puffin_app_url');
+        $app_url = get_option('options_puffin_app_url') ?? 'https://puffin.bluewren.systems/api/';
         $client_secret = get_option('options_puffin_client_secret');
         $application_id = get_option('options_puffin_application_id');
         $client_token = get_option('options_puffin_client_token');

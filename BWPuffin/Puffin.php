@@ -16,13 +16,9 @@ class Puffin
         return new self();
     }
 
-    public function __set($property, $value) {
-
-        if($property == 'body'){
-            $this->$property = $value;
-        } else {
-            $this->$property = sanitize_text_field($value);
-        }
+    public function __set($property, $value) 
+    {
+        $this->$property = $value;
     }
 
     public function __get($name) {
